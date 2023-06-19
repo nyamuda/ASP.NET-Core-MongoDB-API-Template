@@ -26,4 +26,5 @@ COPY --from=publish /app/publish .
 ENV DATABASE_CONNECTION_STRING=$DATABASE_CONNECTION_STRING
 ENV DATABASE_NAME=$DATABASE_NAME
 
-ENTRYPOINT ["dotnet", "WebApplication1.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet WebApplication1.dll
+# ENTRYPOINT ["dotnet", "WebApplication1.dll"]
