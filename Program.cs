@@ -17,9 +17,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+// Access the database settings
+var connectionString = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
 //MongoDB Register
-builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-builder.Services.AddSingleton<ApplicationDbContext>();
+var databaseName = Environment.GetEnvironmentVariable("DATABASE_NAME");
+builder.Services.AddSingleton(sp =>
+{
+    return new ApplicationDbContext(connectionString, databaseName);
+});
+
 
 
 builder.Services.AddScoped<UserService>();

@@ -22,4 +22,8 @@ RUN dotnet publish "WebApplication1.csproj" -c Release -o /app/publish /p:UseApp
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+# Set the environment variables for the database connection string and name
+ENV DATABASE_CONNECTION_STRING=$DATABASE_CONNECTION_STRING
+ENV DATABASE_NAME=$DATABASE_NAME
+
 ENTRYPOINT ["dotnet", "WebApplication1.dll"]

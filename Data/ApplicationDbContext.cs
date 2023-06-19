@@ -7,10 +7,10 @@ public class ApplicationDbContext
 {
     private readonly IMongoDatabase _database;
 
-    public ApplicationDbContext(IOptions<AppSettings> settings)
+    public ApplicationDbContext(string connectionString, string databaseName)
     {
-        var client = new MongoClient(settings.Value.ConnectionString);
-        _database = client.GetDatabase(settings.Value.DatabaseName);
+        var client = new MongoClient(connectionString);
+        _database = client.GetDatabase(databaseName);
     }
 
     public IMongoCollection<User> Users => _database.GetCollection<User>("users");
