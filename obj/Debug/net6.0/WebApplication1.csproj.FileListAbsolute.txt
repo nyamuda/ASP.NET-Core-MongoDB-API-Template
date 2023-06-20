@@ -103,3 +103,8 @@ C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug
 C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\published\web.config
+C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\published\appsettings.Development.json
+C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\published\appsettings.json
+C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\published\WebApplication1.deps.json
+C:\Users\Pierce T. Nyamuda\Documents\personal-projects\WebApplication1\bin\Debug\net6.0\published\WebApplication1.runtimeconfig.json
